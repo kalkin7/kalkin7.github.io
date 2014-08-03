@@ -214,6 +214,7 @@ nav a.selected:hover {
   max-width: 50px;
   vertical-align: -3px;
   margin-left: 12px;
+  border-width: 0;
 }
 
 .links {
