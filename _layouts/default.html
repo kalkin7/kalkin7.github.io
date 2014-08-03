@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="{% if page.language == nil %}en{% else %}{{ page.language }}{% endif %}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--   <meta name="google-site-verification" content="aexITLS38FdIRzwj25OVWxm87rpa9l-UV0URTyC9cTs" /> -->
+  <title>
+    {{ page.title }}
+    {% if page.category == 'blog' and page.url != '/blog/index.html' %}
+    - @Kalkin's Blog
+    {% endif %}
+  </title>
+<!--   <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:700,400|Titillium+Web:700,400"> -->
+  <link rel="stylesheet" href="/css/site.css">
+  <link href="/favicon/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+  {% if page.description %}<meta name="description" content="{{page.description}}" />{% endif %}
+  <link rel="alternate" type="application/atom+xml" title="RSS Feed for Kalkin's blog" href="/feed.xml" />
+  <script src="/js/instantclick.min.js" data-no-instant></script>
+  <script data-no-instant>InstantClick.init();</script>
+<!--   {% if page.url == '/index.html' %}
+    <link rel="alternate" hreflang="fr" href="/fr/" />
+  {% elsif page.url == '/fr/index.html' %}
+    <link rel="alternate" hreflang="en" href="/" />
+  {% endif %} -->
+
+  {{ page.extra_head }}
+</head>
+<body>
+  <div class="top-bar"></div>
+
+  <div class="container">
+    <div class="site">
+      <header>
+        <nav>
+          <!-- <a class="{% if page.category == '/' %} selected {% endif %}" href="/">홈</a> -->
+          <a class="{% if page.category == 'archive' %} selected {% endif %}" href="/archive/">전체글</a>
+        </nav>
+        <div class="pull-left left logo">
+          <div class="name">
+            <a href="/">Kalkin's Blog</a>
+          </div>
+          <a href="/feed.xml"><img class="avatar" src="/images/rss.jpg" alt="RSS" /></a>
+        </div>
+        <div class="clear"></div>
+      </header>
+      <div class="separator"></div>
+      {{ content }}
+      <div class="separator"></div>
+    </div>
+  </div>
+
+  <div class="clear"></div>
+
+  <footer>
+    {% include footer.md %}
+  </footer>
+
+  <script defer src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <!-- tag, category search -->
+  <script defer src="/js/alexpearce.js"></script>
+  <!-- Google Analytics -->
+<!--  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-42615434-1', 'nolboo.github.io');
+    ga('send', 'pageview');
+  </script> -->
+</body>
+</html>

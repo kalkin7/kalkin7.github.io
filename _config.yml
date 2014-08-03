@@ -1,0 +1,32 @@
+title: Kalkin's Blog
+
+# Oveerriden by GitHub Pages: https://help.github.com/articles/using-jekyll-with-pages#configuring-jekyll
+safe: true
+lsi: false
+
+permalink: pretty
+
+# Use kramdown as markdown parser engine.
+markdown:      kramdown
+markdown_ext:  markdown,mkd,mkdn,md
+
+kramdown:
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 2..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  use_coderay: true
+
+  coderay:
+    coderay_wrap: div
+    coderay_line_numbers: nil
+    coderay_tab_width: 4
+    coderay_bold_every: 10
+    coderay_css: class
+
+paginate: 10
+
+author:
+    twitter: 
+    github: 
