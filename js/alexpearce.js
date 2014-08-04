@@ -121,9 +121,10 @@ var noResultsPage = function(property, value) {
   var $container = $('#results');
   if ($container.length == 0) return;
   
-  $container.find('h1').text('No Results Found.').after('<p class="nadda"></p>');
+  $container.find('h1').text('아무것도 찾을 수 없습니다.').after('<p class="nadda"></p>');
   
-  var txt = "We couldn't find anything associated with '" + value + "' here.";
+  // var txt = "We couldn't find anything associated with '" + value + "' here.";
+  var txt = "죄송합니다. 입력한 검색어 '" + value + "' 에 해당하는 항목이 없습니다. 다른 키워드로 바꿔서 시도해보세요.";
   $container.find('p.nadda').text(txt);
 };
 
