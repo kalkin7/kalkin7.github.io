@@ -526,7 +526,7 @@ img.aligncenter{
 /*****************************************************************************/
 
 /* External Link to New Window */
-a.external{padding-right:12px;background:url(http://ts.daumcdn.net/custom/blog/94/948102/skin/images/external-sem.png) no-repeat 100% 50%;}
+a.externalLink{padding-right:12px;background:url(http://ts.daumcdn.net/custom/blog/94/948102/skin/images/external-sem.png) no-repeat 100% 50%;}
 
 /* TOC */
 div#toc ul{list-style:none;margin-left:0;padding-left:0.5em;font-size: 95%;line-height: 1.5}

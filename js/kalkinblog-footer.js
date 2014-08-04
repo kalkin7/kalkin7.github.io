@@ -177,7 +177,11 @@ $(function() {
 
 
 /* External Link to New Window */
-this.blankwin=function(){var c=window.location.hostname;c=c.replace("www.","").toLowerCase();var b=document.getElementsByTagName("a");this.check=function(e){var a=e.href.toLowerCase();return(a.indexOf("http://")!=-1&&a.indexOf(c)==-1)?true:false};this.set=function(a){a.target="_blank";a.className="external"};for(var d=0;d<b.length;d++){if(check(b[d])){set(b[d])}}};this.addEvent=function(c,b,a){if(c.attachEvent){c["e"+b+a]=a;c[b+a]=function(){c["e"+b+a](window.event)};c.attachEvent("on"+b,c[b+a])}else{c.addEventListener(b,a,false)}};addEvent(window,"load",blankwin);
+$(document).ready(function() {
+        $('#post a').filter(function() {
+         return this.hostname && this.hostname !== location.hostname;
+        }).addClass('externalLink');
+      });
 
 
 /* TOC Generator JS */
