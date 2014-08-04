@@ -529,7 +529,7 @@ img.aligncenter{
 a.externalLink{padding-right:12px;background:url(http://ts.daumcdn.net/custom/blog/94/948102/skin/images/external-sem.png) no-repeat 100% 50%;}
 
 /* TOC */
-div#toc {background:none repeat scroll 0 0 #f9f9f9;border:1px solid #aaa;display:table;margin-top:2em;margin-bottom:1em;padding:10px;width:auto}
+div#toc {background:none repeat scroll 0 0 #f9f9f9;border:1px solid #aaa;display:table;margin-top:2em;margin-bottom:1em;padding:10px 20px;width:auto}
 div#toc ul{list-style:none;margin-left:0;padding-left:0.5em;font-size:90%;line-height:1.5}
 div#toc ul li ul{margin-bottom:0.75em;}
 div#toc ul li ul li ul{margin-bottom:0.25em;}
