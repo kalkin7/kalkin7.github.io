@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "무거운 워드프레스에서 다른 블로그로"
-description: "무겁고 손이 많이 가는 워드프레스에서 DB를 사용하지 않는 다른 블로그로 옮겨보려고 생각중이다."
+description: "무겁고 손이 많이 가는 워드프레스에서 DB를 사용하지 않아 가볍고 손이 많이 가지 않는 다른 블로그로 옮겨보려고 생각중이다."
 category: blog
 tags: [ blog ]
 ---
