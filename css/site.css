@@ -529,13 +529,14 @@ img.aligncenter{
 a.externalLink{padding-right:12px;background:url(http://ts.daumcdn.net/custom/blog/94/948102/skin/images/external-sem.png) no-repeat 100% 50%;}
 
 /* TOC */
-div#toc ul{list-style:none;margin-left:0;padding-left:0.5em;font-size: 95%;line-height: 1.5}
+div#toc {background:none repeat scroll 0 0 #f9f9f9;border:1px solid #aaa;display:table;margin-top:2em;margin-bottom:1em;padding:10px;width:auto}
+div#toc ul{list-style:none;margin-left:0;padding-left:0.5em;font-size:90%;line-height:1.5}
 div#toc ul li ul{margin-bottom:0.75em;}
 div#toc ul li ul li ul{margin-bottom:0.25em;}
 div#toc1 ul{list-style:none;margin: 0.25em 0 1.5em 1em;}
 div#toc1 ul li ul{margin-bottom:0.75em;}
 div#toc1 ul li ul li ul{margin-bottom:0.25em;}
-.toc-heading{font-size: 130%;font-weight: 400;color: #1C1C1C;margin-top: 2em;margin-bottom: 1em;line-height: 1.2em;}
+.toc_title{font-size:125%;font-weight:400;color:#1C1C1C;margin:0.5em 0;line-height:1.2em;}
 .mobile div#toc1 ul{list-style:none;margin: 0.25em 0 1.5em 1em;}
 .mobile div#toc1 ul li ul{margin-bottom:0.75em;}
 .mobile div#toc1 ul li ul li ul{margin-bottom:0.25em;}
