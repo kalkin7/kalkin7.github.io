@@ -6,6 +6,8 @@ category: blog
 tags: [ blog ]
 ---
 
+<div id="toc"><span class="toc-heading">목차</span></div>
+
 ## 워드프레스의 단점
 
 현재 난 설치형 워드프레스로 블로그를 운영하고 있다. 나름 만족하면서 잘 쓰고 있지만, 블로그만을 운영하려는 나에게 있어서 워드프레스는 너무 복잡한 편이다.
