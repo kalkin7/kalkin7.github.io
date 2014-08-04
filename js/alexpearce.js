@@ -78,7 +78,8 @@ var layoutResultsPage = function(property, value, posts) {
   if ($container.length == 0) return;
   
   // Update the header
-  var str = majusculeFirst(property) + " Listing for ‘" + majusculeFirst(value) + '’';
+  // var str = majusculeFirst(property) + " Listing for ‘" + majusculeFirst(value) + '’';
+  var str = " 태그 글목록 : ‘" + majusculeFirst(value) + '’';
   $container.find('h1').text(str);
   
   // Loop through each post to format it
