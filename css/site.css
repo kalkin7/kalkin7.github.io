@@ -517,3 +517,13 @@ img.aligncenter{
   display: block;
   margin: 0 auto;
 }
+
+
+/*****************************************************************************/
+/*
+/* Custom CSS
+/*
+/*****************************************************************************/
+
+/* External Link to New Window */
+a.external{padding-right:12px;background:url(http://ts.daumcdn.net/custom/blog/94/948102/skin/images/external-sem.png) no-repeat 100% 50%;}
