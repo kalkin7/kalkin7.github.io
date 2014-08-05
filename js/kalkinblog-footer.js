@@ -103,7 +103,7 @@ var layoutResultsPage = function(property, value, posts) {
         + '</a>'
         // Post date
         + ' <span class="date">- '
-         + posts[i].date.day + ' ' + posts[i].date.month + ' ' + posts[i].date.year
+         + posts[i].date.year + '년 ' + posts[i].date.month + '월 ' + posts[i].date.day + '일 '
         + '</span>'
         // Tags
         + tagsList
