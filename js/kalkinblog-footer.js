@@ -180,7 +180,7 @@ $(function() {
 $(document).ready(function() {
         $('#post a').filter(function() {
          return this.hostname && this.hostname !== location.hostname;
-        }).addClass('externalLink');
+        }).addClass('externalLink') .attr('target', '_blank');
       });
 
 
