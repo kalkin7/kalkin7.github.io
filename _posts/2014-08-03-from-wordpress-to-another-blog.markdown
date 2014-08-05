@@ -59,7 +59,7 @@ Pico는 완전히 무료이지만 관리 패널 같은 것이 없기 때문에 �
 
 [Jekyll](http://jekyllrb.com/)은 앞의 두 블로그 플랫폼과는 달리, 블로그 소프트웨어라기보다는 정적 사이트 생성기라고 봐야 한다. PC에 Jekyll을 설치하고 특정 템플릿을 설치한 후 마크다운으로 글을 작성하고, 특정 명령을 실행하면 자동으로 테마가 입혀진 HTML 파일이 생성된다. Jekyll은 블로그처럼 시간 역순으로 업데이트되는 글을 보여주는 것도 가능하기 때문에, 테마를 잘 만들면 블로그와 같은 기능을 하는 사이트를 만드는 것이 가능하다.
 
-Jekyll의 가장 큰 장점은 [Github](http://github.com/)에서 Github pages 라는 기능을 통해 Jekyll을 기본 지원하고 있다는 것이다. 원래 Jekyll을 사용해서 블로그를 운영하려면 PC에 Jekyll을 설치한 후 HTML 파일들을 생성해서 그 파일들을 웹상에 올리는 과정이 필요하다. 당연히 글이 많아질수록 HTML 파일을 만드는 시간도 오래 걸리게 되므로 불편하다. 하지만 [Github Pages](https://pages.github.com/) 기능을 이용하면 PC에서 HTML 파일을 생성할 필요가 없다. 마크다운등으로 작성한 글을 [Github](http://github.com/)에 올리기만 하면 Github에서 자동으로 HTML을 생성해서 보여주기 때문이다. 그뿐만이 아니다. Github Pages 기능은 **공짜**다.
+Jekyll의 가장 큰 장점은 [Github](http://github.com/)에서 Github pages 라는 기능을 통해 Jekyll을 기본 지원하고 있다는 것이다. 원래 Jekyll을 사용해서 블로그를 운영하려면 PC에 Jekyll을 설치한 후 HTML 파일들을 생성해서 그 파일들을 웹상에 올리는 과정이 필요하다. 당연히 글이 많아질수록 HTML 파일을 만드는 시간도 오래 걸리게 되므로 불편하다. 하지만 [Github Pages](https://pages.github.com/) 기능을 이용하면 PC에서 HTML 파일을 생성할 필요가 없다. 마크다운등으로 작성한 글을 [Github](http://github.com/)에 올리기만 하면 Github에서 자동으로 HTML을 생성해서 보여주기 때문이다. 그뿐만이 아니다. Github Pages 기능은 **공짜**다. 또한 [CDN(Content delivery network: 콘텐츠 전송 네트워크)](http://ko.wikipedia.org/wiki/%EC%BD%98%ED%85%90%EC%B8%A0_%EC%A0%84%EC%86%A1_%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC)을 활용하고 있기 때문에 한국에 서버가 있지 않음에도 불구하고 꽤 빠른 속도를 보여준다.
 
 
 
