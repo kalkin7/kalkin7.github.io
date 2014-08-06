@@ -7,6 +7,7 @@ description: Kalkin 블로그 전체글목록
 <article id="archive">
 <p><h1>전체글목록</h1><br /></p>
 <!-- <p><div id="toc"><p class="toc_title">년도</p></div></p> -->
+<p>
 <ul>
   {% for post in site.posts %}
 
@@ -23,4 +24,5 @@ description: Kalkin 블로그 전체글목록
     <li class="archive_post_list" data-index="{{ post.title | downcase }}"><small><time>{{ post.date | date:"%m월 %d일" }}</time></small>&nbsp;&nbsp;&nbsp;<a href="{{ post.url }}">{{ post.title }}</a></li>
   {% endfor %}
 </ul>
+</p>
 </article>
