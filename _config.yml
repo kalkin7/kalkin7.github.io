@@ -25,6 +25,9 @@ kramdown:
     coderay_bold_every: 10
     coderay_css: class
 
+gems:
+  - jekyll-sitemap
+
 paginate: 10
 
 author:
