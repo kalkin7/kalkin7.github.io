@@ -543,5 +543,6 @@ div#toc1 ul li ul li ul{margin-bottom:0.25em}
 article#archive div#toc ul {list-style: disc outside none}
 article#archive div#toc ul li {margin-left: 1.4em}
 
-/* Archive List */
+/* Archive Page */
+.archive_year{border-bottom:medium solid #d7d7d7;padding-bottom:5px}
 li.archive_post_list{margin-left:2em}

@@ -11,12 +11,12 @@ description: Kalkin 블로그 전체글목록
   {% for post in site.posts %}
 
     {% unless post.next %}
-      <h2>{{ post.date | date: '%Y년' }}</h2>
+      <h2 class="archive_year">{{ post.date | date: '%Y년' }}</h2>
     {% else %}
       {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
       {% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
       {% if year != nyear %}
-        <h2>{{ post.date | date: '%Y년' }}</h2>
+        <h2 class="archive_year">{{ post.date | date: '%Y년' }}</h2>
       {% endif %}
     {% endunless %}
 
