@@ -1,11 +1,12 @@
 ---
-layout: default
-title: Kalkin's Blog
-description: Kalkin 블로그
+layout: archive
+title: Kalkin's Blog Archive
+description: Kalkin 블로그 전체글목록
 ---
 
-<article>
+<article id="archive">
 <p><h1>전체글목록</h1><br /></p>
+<!-- <p><div id="toc"><p class="toc_title">년도</p></div></p> -->
 <ul>
   {% for post in site.posts %}
 
@@ -15,7 +16,7 @@ description: Kalkin 블로그
       {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
       {% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
       {% if year != nyear %}
-        <h2>{{ post.date | date: '%Y' }}</h2>
+        <h2>{{ post.date | date: '%Y년' }}</h2>
       {% endif %}
     {% endunless %}
 

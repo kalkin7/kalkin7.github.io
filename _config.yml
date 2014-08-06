@@ -28,6 +28,8 @@ kramdown:
 gems:
   - jekyll-sitemap
 
+timezone: Asia/Seoul
+
 paginate: 10
 
 author:
