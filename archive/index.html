@@ -5,13 +5,21 @@ description: Kalkin 블로그
 ---
 
 <article>
-<p><h1>전체글목록</h1>
-<br /></p>
-	<ul>
-	  {% for post in site.posts %}
-	    <li data-index="{{ post.title | downcase }}">
-	      <small>{{ post.date | date: "%Y년 %m월 %d일" }}</small>&nbsp;&nbsp;&nbsp;<a href="{{ post.url }}">{{ post.title }}</a>
-	    </li>
-	  {% endfor %}
-	</ul>
+<p><h1>전체글목록</h1><br /></p>
+<ul>
+  {% for post in site.posts %}
+
+    {% unless post.next %}
+      <h2>{{ post.date | date: '%Y년' }}</h2>
+    {% else %}
+      {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
+      {% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
+      {% if year != nyear %}
+        <h2>{{ post.date | date: '%Y' }}</h2>
+      {% endif %}
+    {% endunless %}
+
+    <li class="archive_post_list" data-index="{{ post.title | downcase }}"><small><time>{{ post.date | date:"%m월 %d일" }}</time></small>&nbsp;&nbsp;&nbsp;<a href="{{ post.url }}">{{ post.title }}</a></li>
+  {% endfor %}
+</ul>
 </article>

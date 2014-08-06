@@ -540,3 +540,6 @@ div#toc1 ul li ul li ul{margin-bottom:0.25em;}
 .mobile div#toc1 ul{list-style:none;margin: 0.25em 0 1.5em 1em;}
 .mobile div#toc1 ul li ul{margin-bottom:0.75em;}
 .mobile div#toc1 ul li ul li ul{margin-bottom:0.25em;}
+
+/* Archive List */
+li.archive_post_list{margin-left:2em}
