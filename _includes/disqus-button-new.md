@@ -20,7 +20,7 @@ $.ajax({
     dataType: 'jsonp',
     success: function(result) {
         if (result.response.length === 1) {
-            btnText = 'Show Comments (' + result.response[0].posts + ')';
+            btnText = '댓글 보기 (' + result.response[0].posts + ')';
             $('.show-comments').html(btnText);
         }
     }
