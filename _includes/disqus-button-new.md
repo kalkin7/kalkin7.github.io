@@ -8,35 +8,36 @@
 <div id="disqus_thread"></div>
 
 <script>
-var disqusPublicKey = "fOXhMULciQhdioBjLVw4VZgvKJOLRcVUYcwwPAmG2iXr7ynUByPHxKFWlux6tfjv";
-var disqusShortname = "kalkingithub";
-var data-disqus-url = "{{post.url}}"
-var threadUrl = 'link:' + $('.show-comments').attr('data-disqus-url');
+$(document).ready(function () {
+    var disqusPublicKey = "fOXhMULciQhdioBjLVw4VZgvKJOLRcVUYcwwPAmG2iXr7ynUByPHxKFWlux6tfjv";
+    var disqusShortname = "kalkingithub";
+    var threadUrl = 'link:' + $('.show-comments').attr('data-disqus-url');
 
-$.ajax({
-    type: 'GET',
-    url: 'https://disqus.com/api/3.0/threads/set.jsonp',
-    data: { api_key: disqusPublicKey, forum: disqusShortname, thread: threadUrl },
-    cache: false,
-    dataType: 'jsonp',
-    success: function(result) {
-        if (result.response.length === 1) {
-            btnText = '댓글 보기 (' + result.response[0].posts + ')';
-            $('.show-comments').html(btnText);
+    $.ajax({
+        type: 'GET',
+        url: 'https://disqus.com/api/3.0/threads/set.jsonp',
+        data: { api_key: disqusPublicKey, forum: disqusShortname, thread: threadUrl },
+        cache: false,
+        dataType: 'jsonp',
+        success: function(result) {
+            if (result.response.length === 1) {
+                btnText = '댓글 보기 (' + result.response[0].posts + ')';
+                $('.show-comments').html(btnText);
+            }
         }
+    });
+
+    $('.show-comments').on('click', function() {
+        $.ajaxSetup({cache:true});
+        $.getScript('http://' + disqusShortname + '.disqus.com/embed.js');
+        $.ajaxSetup({cache:false});
+        $(this).remove();
+    });
+
+    if(/\#comment/.test(location.hash)){
+        $('.show-comments').trigger('click');
     }
 });
-
-$('.show-comments').on('click', function() {
-    $.ajaxSetup({cache:true});
-    $.getScript('http://' + disqusShortname + '.disqus.com/embed.js');
-    $.ajaxSetup({cache:false});
-    $(this).remove();
-});
-
-if(/\#comment/.test(location.hash)){
-    $('.show-comments').trigger('click');
-}
 </script>
 <style scoped=scoped>
 @media print{
