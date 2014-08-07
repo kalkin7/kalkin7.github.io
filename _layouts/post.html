@@ -47,10 +47,10 @@ layout: default
 <hr />
 <script>
 if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-  var disqus_include="{% include disqus-button-new.md %}";
+  var disqus_include="include disqus-button-new.md";
 }
 else{
-  var disqus_include="{% include disqus.md %}";
+  var disqus_include="include disqus.md";
 }
-document.write(disqus_include);
+document.write('{% ' + disqus_include + ' %}');
 </script>>
