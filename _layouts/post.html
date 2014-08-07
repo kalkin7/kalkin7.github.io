@@ -47,9 +47,9 @@ layout: default
 <hr />
 <script>
 if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
- {% include disqus-button-new.md %}
+  document.writeln('{% include disqus-button-new.md %}');
 }
 else{
-{% include disqus.md %}
+  document.writeln('{% include disqus.md %}');
 }
 </script>>
