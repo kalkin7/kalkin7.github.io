@@ -1,0 +1,11 @@
+<div class="recent_posts">
+<h2>최신글</h2>
+<ul>  
+	{% for post in site.posts limit:5 %}  
+	   <li>  
+		   <a href="{{ BASE_PATH }}{{ post.url }}">  
+		   {{ post.title }}</a>  
+	   </li>  
+	{% endfor %}  
+</ul>
+</div>
