@@ -727,6 +727,7 @@ article#archive div#toc ul li {margin-left: 1.4em}
 /* Archive Page */
 .archive_year{border-bottom:medium solid #d7d7d7;padding-bottom:5px}
 li.archive_post_list{margin-left:2em}
+#archive ul{padding-left:0}
 
 /* Disqus Button */
 button, html input[type="button"], input[type="reset"], input[type="submit"] {cursor: pointer;font-family:Arial,나눔바른고딕,NanumBarunGothic,나눔고딕,NanumGothic,'맑은 고딕','Malgun Gothic',Helvetica,Arial, sans-serif}
