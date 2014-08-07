@@ -6,7 +6,6 @@
         {% for thisTag in page.tags %}
             {% if postHasSimilar == false and hasSimilar.size < 6 and post != page and tag == thisTag %}
                 {% if hasSimilar.size == 0 %}
-                <div class="separator"></div>
                 <h2>관련글</h2>
                 <ul>
                 {% endif %}
