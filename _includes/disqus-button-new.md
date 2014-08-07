@@ -10,6 +10,7 @@
 <script>
 var disqusPublicKey = "fOXhMULciQhdioBjLVw4VZgvKJOLRcVUYcwwPAmG2iXr7ynUByPHxKFWlux6tfjv";
 var disqusShortname = "kalkingithub";
+var data-disqus-url = "{{post.url}}"
 var threadUrl = 'link:' + $('.show-comments').attr('data-disqus-url');
 
 $.ajax({
