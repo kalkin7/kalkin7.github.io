@@ -1,9 +1,10 @@
 <section class="comments">
 
 <div class=disqusbox>
-<div><hr />
+<div>
 <p><strong>댓글을 보거나 작성하시려면 아래 버튼을 눌러주세요.</strong></p>
 <button class="show-comments" data-disqus-url="{{post.url}}"><span class="icon-comments"></span>&nbsp;&nbsp;댓글 보기</button>
+</div>
 <div id="disqus_thread"></div>
 
 <script>
