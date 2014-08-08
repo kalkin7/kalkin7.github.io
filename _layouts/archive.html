@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="naver-site-verification" content="11aec1a6643e4d766c373f4d382907c8cb3bf049"/>
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="naver-site-verification" content="11aec1a6643e4d766c373f4d382907c8cb3bf049"/>
 <!--   <meta name="google-site-verification" content="aexITLS38FdIRzwj25OVWxm87rpa9l-UV0URTyC9cTs" /> -->
   <title>
     {{ page.title }}
@@ -87,9 +87,9 @@
     ga('create', 'UA-42615434-1', 'nolboo.github.io');
     ga('send', 'pageview');
   </script> -->
+  
   <!-- TOC Generator -->
-  <script>
-     $('#toc').toc({exclude: 'h1, h3, h4, h5, h6', context: '#archive', autoId: true, numerate: false});
-  </script>
+  {% include toc-archive.html %}
+  
 </body>
 </html>

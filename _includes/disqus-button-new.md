@@ -19,7 +19,7 @@ $(document).ready(function () {
         dataType: 'jsonp',
         success: function(result) {
             if (result.response.length === 1) {
-                btnText = '댓글 보기 (' + result.response[0].posts + ')';
+                btnText = '댓글 보기 (' + result.response[0].posts + ')개';
                 $('.show-comments').html(btnText);
             }
         }
