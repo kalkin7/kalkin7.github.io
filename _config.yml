@@ -34,5 +34,6 @@ timezone: Asia/Seoul
 paginate: 10
 
 author:
-    twitter: 
-    github: 
+	name: kalkin7
+    twitter: https://twitter.com/kalkin_7
+    email: kalkin7@gmail.com
