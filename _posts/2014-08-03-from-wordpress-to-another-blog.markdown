@@ -6,7 +6,7 @@ category: blog
 tags: [ blog ]
 ---
 
-<div id="toc"><p class="toc_title">목차</p></div>
+<div id="toc"></div>
 
 ## 워드프레스의 단점
 
