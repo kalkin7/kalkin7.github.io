@@ -33,7 +33,7 @@ timezone: Asia/Seoul
 
 paginate: 10
 
-author:
-	name: kalkin7
+author:name:
+    name: kalkin7
     twitter: https://twitter.com/kalkin_7
     email: kalkin7@gmail.com
