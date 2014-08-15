@@ -10,6 +10,99 @@ tags: [ blog, jekyll, git ]
 
 ## Jekyll 블로그
 
+나는 [마크다운][마크다운]을 이용해서 블로그에 올릴 글을 쓴다. 이미지를 위주로 하는 글을 쓰는 것이 아니라면 마크다운을 이용해서 글을 쓰는 것이 정말 편리하다. 글을 쓸 때 어떻게 글을 꾸밀지 고민하기보다는 글에 집중을 할 수 있어서 좋고, 블로그의 모든 글들의 모양이 통일성을 갖출 수 있어서 좋고, 마크다운으로 작성한 글이란 것이 단순한 텍스트 파일이기 때문에 보관과 백업, 버전관리가 편한 것도 좋다.
+
+난 현재 워드프레스 블로그를 메인 블로그로 운영하고 있는데, 워드프레스도 자체적으로 마크다운을 지원하기 시작해서 마크다운으로 글을 쓰기 좋아졌다.
+
+하지만 사람이란 게 점점 더 편한 방법을 찾기 마련이다. 내가 현재 워드프레스 블로그에 글을 올리는 과정은 다음과 같다.
+
+1. 웹브라우저를 실행하고, 워드프레스 블로그에 접속한다.
+2. 로그인한다.
+3. 관리자 화면에서 글쓰기를 선택한다.
+4. 위지윅 에디터에 글을 작성하고 저장한다.
+5. 끝!!!
+
+하지만 [Jekyll][jekyll]을 이용해서 [Github][Github]에 블로그를 만들면, 다음과 같은 과정을 통해 블로그에 글을 올릴 수 있다.
+
+1. 애용하는 에디터로 글을 쓰고 저장한다.
+2. 배치 파일을 실행한다.
+3. 끝!
+
+**훨씬 간편하게 글을 올릴 수 있다.** 물론 엄청난 사용자를 가진 워드프레스보다 사용이 불편할 수는 있다. 프로그래머들이 사용하는 [Github][Github]을 사용하고, 커맨드라인 명령어를 사용한다는 것만으로도 보통 사람들에게는 기피의 대상이 될수도 있다.
+
+하지만 블로그에 글을 더 편하게 올릴 수 있고, 더불어 일반적인 웹호스팅보다 훨씬 더 안정적이며, 또한 완전히 무료이기까지 한 [Jekyll][jekyll]+[Github][Github] 블로그는 상당히 매력적이기도 하다.
+
+그래서 이 글에서는 윈도우즈에서 [Jekyll][jekyll]과 [git][git]를 설치하고, 블로그를 만들고 글을 작성해서 올리는 방법에 대해서 설명해 보고자 한다.
+
+사실 나 역시 아직 [Jekyll][jekyll]과 [git][git]에 대해 잘 모른다. 프로그래머도 아니다보니 모두 생소한 것 뿐이다. 하지만 블로그를 운영하는 데 필요한 정도의 지식을 쌓는 것은 그리 힘들지 않다. 이 글을 천천히 따라하다보면 [Jekyll][jekyll]+[Github][Github]를 운영하는 것은 쉽게 할 수 있게 될 것이다.
+
+※ [Github][Github]이나 [git][git], [Jekyll][jekyll]에 대한 좀 더 상세한 지식을 얻고 싶으면 [Nolboo's Blog](http://nolboo.github.io/)를 방문해서 관련글을 읽어보면 좋을 것이다.
+
+
+## Github에 블로그 생성하기
+
+### git 설치
+**1) git for windows 다운로드**
+
+[http://git-scm.com/](http://git-scm.com/)에 접속한 후 **'Downloads for Windows'** 버튼을 눌러서 파일을 다운 받는다.
+
+![git for windows setup 1](http://lh4.googleusercontent.com/-pvnnmHf-lXE/U-iuAsrljRI/AAAAAAABrY8/EcTv5fUJGng/s0/git-download%252528700%252529.jpg)     
+▲ git-scm.com 사이트. 우하단에서 **'Downloads for Windows'** 버튼을 눌러서 파일을 다운 받는다.
+
+
+**2) git for windows 설치**
+
+![git for windows setup 1](http://lh6.googleusercontent.com/-xDALUdhWacQ/U-itJepk-pI/AAAAAAABrY0/ZbEanwvc9P8/s0/git-setup1.png)     
+▲ git for windows 설치 화면. 다운받은 파일을 실행하면 뜨는 창이다.
+
+![git for windows setup - component 선택](http://lh5.googleusercontent.com/-y4E77WAueF0/U-ivAn4m2aI/AAAAAAABrZE/QhetyDEIHUg/s0/git-setup2.png)     
+▲ git for windows component 선택 화면. 여기서 **"Advanced context menu"**를 선택하면 아래와 같이 마우스 컨텍스트 메뉴에 git 관련 메뉴들이 추가되서 편하다.
+
+![git for windows mouse context menu](http://lh5.googleusercontent.com/-UKl91j0eqm8/U-ivedLfKWI/AAAAAAABrZM/nyI6HlYv8nA/s0/git-setup3.png)     
+▲ git for windows 마우스 컨텍스트 메뉴
+
+![git for windows line ending conversion](http://lh3.googleusercontent.com/-VGsdi0pkVKY/U-iwF4ZL6BI/AAAAAAABrZU/I2OWhQ3j3g0/s0/git-setup4.png)     
+▲ git for windows 행변환 문자 설정. 윈도우는 CRLF를 행변환 때 사용하는 반면, 유닉스에서는 LF만을 사용하기 때문에, 윈도우즈 환경에서 git를 쓸 때는 첫번째를 선택해줘야 한다.
+
+
+**3) git 기본 환경 설정**
+
+다음 명령어를 입력하여 이름과 이메일 주소를 저장한다.
+
+	git config --global user.name "xxxxxx"
+	git config --global user.email "xxxxxx@gmail.com"
+
+다음 명령어를 입력하여 제대로 설정되었는지 확인한다.
+
+	git config --global --list
+	user.name=xxxxxx
+	user.email=xxxxxx@gmail.com
+
+실수로 잘못 입력한 것이 있다면 다음 명령으로 삭제할 수 있다.
+
+	git config --global --unset 전역변수 이름
+
+
+
+### Github 가입
+
+
+
+### Github 블로그 생성
+
+
+
+## PC에 Jekyll 설치하기
+
+[Jekyll][jekyll]을 PC에서 실행하려면 [Ruby][Ruby]라는 프로그래밍 언어를 설치해야 한다. 또한 구문 강조를 위해서 Pygments를 설치하려면 [Python]이라는 프로그래밍 언어까지 설치해야 한다. 지금부터 그 과정을 설명해 보려고 한다.
+
+<span class="icon-warning" style="color:yellow"></span> 
+
+
+### 
+
+지금 소개하려는 방법은 특별히 PC에서 테마를 수정한다거나 하는 일 없이, 
+
 [Jekyll][jekyll]은 Static Site Generator 즉, 정적 사이트 생성기다. 사이트를 만들 대 HTML을 이용해서 각각의 페이지들을 만들고 통합하는 것은 쉬운 일이 아니다. 하지만 Jekyll을 이용하면 이런 과정을 쉽게 처리할 수 있다.
 
 [Liquid][Liquid]라는 템플릿 언어를 사용해서 템플릿을 작성하고, 사이트에 들어갈 내용만 작성한 후 템플릿을 지정해주면, Jekyll이 자동으로 템플릿과 내용을 합쳐서 원하는 모양의 HTML 문서를 만들어낸다. 이렇게 처음부터 끝까지 HTML을 코딩해서 만드는 것보다 훨씬 쉽게 사이트를 만들 수 있게 된다.
@@ -61,16 +154,19 @@ tags: [ blog, jekyll, git ]
 
 
 <!-- 링크 -->
+[마크다운]: http://ko.wikipedia.org/wiki/%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4
 [jekyll]: http://jekyllrb.com/
-[Liquid]: http://docs.shopify.com/themes/liquid-documentation/basics
-[Github]: https://github.com/
-[Github Pages]: https://pages.github.com/
+[Ruby]: http://ko.wikipedia.org/wiki/%EB%A3%A8%EB%B9%84_%28%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D_%EC%96%B8%EC%96%B4%29
+[Python]: http://ko.wikipedia.org/wiki/%ED%8C%8C%EC%9D%B4%EC%8D%AC
+[Github]: http://github.com/
+[Github Pages]: http://pages.github.com/
 [git]: http://ko.wikipedia.org/wiki/%EA%B9%83_%28%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4%29
 
 
 
+
 <!-- 각주 -->
-[^1]: 워드프레스에서도 [WP Super Cache](https://wordpress.org/plugins/wp-super-cache/)나 [W3 Total Cache](https://wordpress.org/plugins/w3-total-cache/)와 같은 캐시 플러그인을 이용하면 미리 HTML 파일을 만들어서 전송하는 게 가능하긴 하다. 하지만 글의 수가 많으질수록 HTML를 미리 만드는 작업이 서버에 부담이 될 수 있다.
+[^1]: 워드프레스에서도 [WP Super Cache](http://wordpress.org/plugins/wp-super-cache/)나 [W3 Total Cache](http://wordpress.org/plugins/w3-total-cache/)와 같은 캐시 플러그인을 이용하면 미리 HTML 파일을 만들어서 전송하는 게 가능하긴 하다. 하지만 글의 수가 많으질수록 HTML를 미리 만드는 작업이 서버에 부담이 될 수 있다.
 [^2]: [git - 간편 안내서](http://rogerdudler.github.io/git-guide/index.ko.html)와 [완전 초보를 위한 깃허브 @ Nolboo's Blog](http://nolboo.github.io/blog/2013/10/06/github-for-beginner/)에서 Github를 블로그를 사용하기 위한 기초 지식을 배울 수 있다.
 
 
