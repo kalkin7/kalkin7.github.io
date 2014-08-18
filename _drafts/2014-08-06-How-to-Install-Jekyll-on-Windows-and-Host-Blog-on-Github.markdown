@@ -88,18 +88,37 @@ tags: [ blog, jekyll, git ]
 
 
 
+
 ### Github 블로그 생성
+
+**1) 원하는 테마 찾기**
+[Jekyll Themes](http://jekyllthemes.org/)에 jekyll에서 쓸 수 있는 테마들이 많이 모아져 있다. 여기서 마음에 드는 테마를 골라서 다운받아 놓는다. 다운로드는 테마 설명 부분에 있는 **'Download'** 버튼을 눌러서 쉽게 받을 수 있다. 또한 대부분의 테마들이 github에 호스팅되어 있기 때문에 `git clone` 명령어를 통해서 다운받아도 된다.
 
 
 
 ## PC에 Jekyll 설치하기
 
-[Jekyll][jekyll]을 PC에서 실행하려면 [Ruby][Ruby]라는 프로그래밍 언어를 설치해야 한다. 또한 구문 강조를 위해서 Pygments를 설치하려면 [Python]이라는 프로그래밍 언어까지 설치해야 한다. 지금부터 그 과정을 설명해 보려고 한다.
+[Jekyll][jekyll]을 Winodws PC에서 실행하려면 [Ruby][Ruby]라는 프로그래밍 언어를 설치해야 한다. 또한 구문 강조를 위해서 Pygments를 설치하려면 [Python]이라는 프로그래밍 언어까지 설치해야 한다. 아무래도 꽤 복잡하고 귀찮은 일이다. 따라서 만약에 [Github Pages][Github Pages]기능을 이용해서 [Github][Github]에 블로그를 호스팅할 예정이고, Jekyll 테마를 많이 수정하지 않고 사용하려고 한다면 PC에 Jekyll를 설치하지 않고 블로그를 운영하는 것도 나쁘지 않다.
 
-<span class="icon-warning" style="color:yellow"></span> 
+하지만 [Github][Github]에 블로그를 호스팅하지 않고 Jekyll로 HTML 파일을 생성한 뒤 웹호스팅등에 올려서 블로그를 운영하려고 한다면 PC에 Jekyll을 설치해야 한다. 물론 테마를 많이 고치고자 할 때도 PC에 Jekyll을 설치하는 것이 훨씬 편하다. 또한 Jekyll의 draft 기능을 사용해서 글을 올리기 전에 블로그에서 어떤 모습으로 보여질지를 확인하려면 PC에 Jekyll이 꼭 설치되어 있어야 한다.
 
 
-### 
+### Ruby와 Ruby DevKit 설치
+
+**1) Ruby 설치**
+
+**[Ruby for Windows 다운로드](http://rubyinstaller.org/downloads/)**
+
+위의 링크로 Ruby for Windows 다운로드 페이지에 접속한 후에, Ruby 2.0.0 버전을 자신의 윈도우즈에 맞게 다운로드한다. 자신의 윈도우즈가 64bit 버전이라면 `Ruby 2.0.0-pxxx(x64)`를, 그렇지 않다면 `Ruby 2.0.0-pxxx`를 다운받아 설치하면 된다.
+
+설치시에는 **'Add Ruby executables to your PATH'**에 꼭 체크하고 설치해야 한다.
+
+
+
+
+
+
+
 
 지금 소개하려는 방법은 특별히 PC에서 테마를 수정한다거나 하는 일 없이, 
 
