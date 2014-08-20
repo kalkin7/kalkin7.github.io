@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Link 전체글목록 @ Kalkin's Blog
+title: 링크 모음 @ Kalkin's Blog
 description: Kalkin's Blog 링크 모음
 ---
 
