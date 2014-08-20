@@ -109,11 +109,16 @@ tags: [ blog, jekyll, git ]
 
 **[Ruby for Windows 다운로드](http://rubyinstaller.org/downloads/)**
 
-위의 링크로 Ruby for Windows 다운로드 페이지에 접속한 후에, Ruby 2.0.0 버전을 자신의 윈도우즈에 맞게 다운로드한다. 자신의 윈도우즈가 64bit 버전이라면 `Ruby 2.0.0-pxxx(x64)`를, 그렇지 않다면 `Ruby 2.0.0-pxxx`를 다운받아 설치하면 된다.
+위의 링크로 Ruby for Windows 다운로드 페이지에 접속한 후에, Ruby 2.0.0 버전을 자신의 윈도우즈에 맞게 다운로드한다. 자신의 윈도우즈가 64bit 버전이라면 **`Ruby 2.0.0-pxxx(x64)`**를, 그렇지 않다면 **`Ruby 2.0.0-pxxx`**를 다운받아 설치하면 된다.
 
-설치시에는 **'Add Ruby executables to your PATH'**에 꼭 체크하고 설치해야 한다.
+설치시에는 **'Add Ruby executables to your PATH'**에 꼭 체크하고 설치해야 한다. 그래야, 나중에 어떤 폴더에서도 Ruby 명령어를 사용할 수 있다.
 
 
+**2) Ruby DevKit 설치**
+
+**[Ruby DevKit 다운로드](http://rubyinstaller.org/downloads/)**
+
+위의 링크로 접속한 후, 자신의 윈도우즈가 64bit 버전이라면 **`DevKit-mingw64-64-xxxx.exe`**를 그렇지 않다면 **`DevKit-mingw64-32-xxxxx.exe`**를 다운받아서 설치한다.
 
 
 
@@ -186,6 +191,8 @@ tags: [ blog, jekyll, git ]
 
 <!-- 각주 -->
 [^1]: 워드프레스에서도 [WP Super Cache](http://wordpress.org/plugins/wp-super-cache/)나 [W3 Total Cache](http://wordpress.org/plugins/w3-total-cache/)와 같은 캐시 플러그인을 이용하면 미리 HTML 파일을 만들어서 전송하는 게 가능하긴 하다. 하지만 글의 수가 많으질수록 HTML를 미리 만드는 작업이 서버에 부담이 될 수 있다.
+
+
+
+
 [^2]: [git - 간편 안내서](http://rogerdudler.github.io/git-guide/index.ko.html)와 [완전 초보를 위한 깃허브 @ Nolboo's Blog](http://nolboo.github.io/blog/2013/10/06/github-for-beginner/)에서 Github를 블로그를 사용하기 위한 기초 지식을 배울 수 있다.
-
-
