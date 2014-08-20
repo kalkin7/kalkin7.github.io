@@ -166,6 +166,7 @@ header .logo a, header .logo a:hover {
     text-align: center;
     padding-top: 0;
     float: none;
+    margin-top: 15px;
   }
 
   header .avatar {
