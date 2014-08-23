@@ -2,7 +2,11 @@
 layout: default
 title: 링크 모음 @ Kalkin's Blog
 description: Kalkin's Blog 링크 모음
+permalink: /link/
 ---
+
+링크모음	{#link-title}
+========
 
 - [infinit.io](https://infinit.io/): P2P 방식으로 파일 교환 가능. 맥의 Airdrop과 비슷하지만 이 서비스는 윈도우즈와 맥에서 모두 쓸 수 있고, 같은 네트워트 안에 있지 않아도 사용 가능하다는 장점이 있음.
 - [네이버 트랜드](http://trend.naver.com/): 검색어의 상대적 검색빈도를 그래프로 보여주는 [구글트렌드](http://www.google.com/trends/)와 유사한 기능을 제공
