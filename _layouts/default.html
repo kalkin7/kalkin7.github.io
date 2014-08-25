@@ -67,16 +67,7 @@
   <!-- tag, category search -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js" type='text/javascript'></script>
   <script src="/js/kalkinblog-footer.js"></script>
-  <script type="text/javascript">
-   var disqus_shortname = 'kalkingithub';
-   /* * * DON'T EDIT BELOW THIS LINE * * */
-      (function () {
-          var s = document.createElement('script'); s.async = true;
-          s.type = 'text/javascript';
-          s.src = '//' + disqus_shortname + '.disqus.com/count.js';
-          (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
-      }());
-  </script>
+  {% include disqus-conditional.md %}
   <!-- <script defer src="/js/alexpearce.js"></script> -->
   <!-- Google Analytics -->
 <!--  <script>
