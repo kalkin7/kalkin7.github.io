@@ -1,5 +1,9 @@
-<script>
-if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+<script type="text/javascript">
+function isMobileDevice() {
+	return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
+};
+
+if( isMobileDevice() ) {
 	document.write('<section class="comments">
 	<div class=disqusbox>
 	<div>
