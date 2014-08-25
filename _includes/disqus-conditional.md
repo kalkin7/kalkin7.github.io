@@ -63,4 +63,4 @@ else{
 
 	document.write('</section>')
 }
-
+</script>
