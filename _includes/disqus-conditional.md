@@ -1,9 +1,5 @@
 <script type="text/javascript">
-function isMobileDevice() {
-	return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
-};
-
-if( isMobileDevice() ) {
+if (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1){
 	document.write('<section class="comments">
 	<div class=disqusbox>
 	<div>
@@ -51,7 +47,7 @@ if( isMobileDevice() ) {
 	</div>
 	</section>')
 }
-else{
+else {
 	document.write('<section class="comments">
 	  <div id="disqus_thread"></div>')
 
