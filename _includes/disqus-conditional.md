@@ -48,8 +48,8 @@ if (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('
 	</section>')
 }
 else {
-	document.write('<section class="comments">
-	  <div id="disqus_thread"></div>')
+	document.write('<section class="comments">')
+	  document.write('<div id="disqus_thread"></div>')
 
 	        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
 	        var disqus_shortname = 'kalkingithub'; // required: replace example with your forum shortname
