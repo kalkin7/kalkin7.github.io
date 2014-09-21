@@ -575,14 +575,13 @@ img.aligncenter{
 /* Icon Font
 /*
 /*****************************************************************************/
-
 @font-face {
 	font-family: 'kalkin7-github';
-	src:url('fonts/kalkin7-github.eot?9zxi26');
-	src:url('fonts/kalkin7-github.eot?#iefix9zxi26') format('embedded-opentype'),
-		url('fonts/kalkin7-github.woff?9zxi26') format('woff'),
-		url('fonts/kalkin7-github.ttf?9zxi26') format('truetype'),
-		url('fonts/kalkin7-github.svg?9zxi26#kalkin7-github') format('svg');
+	src:url('fonts/kalkin7-github.eot?8x6m79');
+	src:url('fonts/kalkin7-github.eot?#iefix8x6m79') format('embedded-opentype'),
+		url('fonts/kalkin7-github.woff?8x6m79') format('woff'),
+		url('fonts/kalkin7-github.ttf?8x6m79') format('truetype'),
+		url('fonts/kalkin7-github.svg?8x6m79#kalkin7-github') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -691,11 +690,12 @@ img.aligncenter{
 .icon-send:before {
 	content: "\f1d8";
 }
+.icon-file-text:before {
+	content: "\f15c";
+}
 .icon-feed:before {
 	content: "\e602";
 }
-
-
 
 
 /*****************************************************************************/
