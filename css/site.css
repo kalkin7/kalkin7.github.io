@@ -27,7 +27,7 @@ ul {
 body {
   color: #545454;
   text-align: center;
-  font-family: Arial,나눔바른고딕,NanumBarunGothic,나눔고딕,NanumGothic,'맑은 고딕','Malgun Gothic',Helvetica,Arial, sans-serif;
+  font-family: 'Source Han Sans','Open Sans',Arial,나눔바른고딕,NanumBarunGothic,나눔고딕,NanumGothic,'맑은 고딕','Malgun Gothic',Helvetica,Arial, sans-serif;
   text-rendering: optimizeLegibility;
   font-size: 120%;
 }
@@ -38,7 +38,7 @@ body {
 }
 
 h1, h2, h3 {
-  font-family: 'Open Sans',Arial,나눔바른고딕,NanumBarunGothic,나눔고딕,NanumGothic,'맑은 고딕','Malgun Gothic',sans-serif;
+  font-family: 'Source Han Sans','Open Sans',Arial,나눔바른고딕,NanumBarunGothic,나눔고딕,NanumGothic,'맑은 고딕','Malgun Gothic',sans-serif;
   font-weight: 400;
   color: #1C1C1C;
   margin-top: 1.6em;
@@ -101,7 +101,7 @@ a.discreet {
 }
 
 .fancy, section, article {
-  font-family: "Titillium Web",나눔바른고딕,NanumBarunGothic,나눔고딕,NanumGothic,'맑은 고딕','Malgun Gothic',Helvetica, Arial, sans-serif;
+  font-family: 'Source Han Sans',"Titillium Web",나눔바른고딕,NanumBarunGothic,나눔고딕,NanumGothic,'맑은 고딕','Malgun Gothic',Helvetica, Arial, sans-serif;
   line-height: 170%;
 }
 
@@ -130,7 +130,7 @@ header {
   margin: auto;
   max-width: 800px;
   width: 100%;
-  font-family: 'Open Sans',Arial,나눔바른고딕,NanumBarunGothic,나눔고딕,NanumGothic,'맑은 고딕','Malgun Gothic',sans-serif;
+  font-family: 'Source Han Sans','Open Sans',Arial,나눔바른고딕,NanumBarunGothic,나눔고딕,NanumGothic,'맑은 고딕','Malgun Gothic',sans-serif;
   font-weight: bold;
 }
 
@@ -282,7 +282,7 @@ ul.posts li {
 
 ul.posts .date {
   color: #999;
-  font-family: "Titillium Web",나눔고딕코딩,NanumGothicCoding,monospace;
+  font-family: 'Source Han Sans',"Titillium Web",나눔고딕코딩,NanumGothicCoding,monospace;
   font-size: 90%;
   margin-right: 0.5em;
 }
@@ -734,11 +734,11 @@ li.archive_post_list{margin-left:2em}
 #link-title{margin-bottom:2em;line-height:120%;text-align:center}
 
 /* Disqus Button */
-button, html input[type="button"], input[type="reset"], input[type="submit"] {cursor: pointer;font-family:Arial,나눔바른고딕,NanumBarunGothic,나눔고딕,NanumGothic,'맑은 고딕','Malgun Gothic',Helvetica,Arial, sans-serif}
+button, html input[type="button"], input[type="reset"], input[type="submit"] {cursor: pointer;font-family:'Source Han Sans',Arial,나눔바른고딕,NanumBarunGothic,나눔고딕,NanumGothic,'맑은 고딕','Malgun Gothic',Helvetica,Arial, sans-serif}
 
 .disqusbut {background-color: #3A4145;color: #FFFFFF;border: none;font-size: 18px;outline: none;padding: 30px 100px;width: 100%}
 
 div.disqusbox{text-align:center;font-style:normal}
 
-button.show-comments, input.show-comments{background-color: #e8e8e8;background-image: -moz-linear-gradient(center top , #f1f1f1, #e8e8e8);background-repeat: repeat-x;border: 1px solid rgba(0, 0, 0, 0.1);border-radius: 3px;box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.95) inset;color: #3e3e3e;cursor: pointer;display: inline-block;font-family: Arial,나눔바른고딕,NanumBarunGothic,나눔고딕,NanumGothic,'맑은 고딕','Malgun Gothic',Helvetica,Arial, sans-serif;font-size: 0.83em;font-weight: bold;line-height: 3;margin-bottom: 1.4em;padding: 0 1em;text-transform: uppercase;transition: all 0.5s ease 0s;vertical-align: middle;white-space: nowrap}
+button.show-comments, input.show-comments{background-color: #e8e8e8;background-image: -moz-linear-gradient(center top , #f1f1f1, #e8e8e8);background-repeat: repeat-x;border: 1px solid rgba(0, 0, 0, 0.1);border-radius: 3px;box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.95) inset;color: #3e3e3e;cursor: pointer;display: inline-block;font-family:'Source Han Sans',Arial,나눔바른고딕,NanumBarunGothic,나눔고딕,NanumGothic,'맑은 고딕','Malgun Gothic',Helvetica,Arial, sans-serif;font-size: 0.83em;font-weight: bold;line-height: 3;margin-bottom: 1.4em;padding: 0 1em;text-transform: uppercase;transition: all 0.5s ease 0s;vertical-align: middle;white-space: nowrap}
 
