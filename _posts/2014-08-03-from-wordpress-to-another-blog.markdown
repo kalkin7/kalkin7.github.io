@@ -2,7 +2,6 @@
 layout: post
 title: 무거운 워드프레스에서 다른 블로그로
 description: "워드프레스는 무겁고 느리며 관리에 노력과 시간이 많이 든다. 블로그만을 운영할 예정이라면 워드프레스보다 가볍고 관리가 간편한 다른 블로그로 옮겨 보는 것은 어떨까?"
-category: blog
 tags: 
   - blog
 published: true
