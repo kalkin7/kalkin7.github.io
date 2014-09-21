@@ -21,6 +21,9 @@ layout: default
   <div class="post" id="post">
   {{ content }}
   </div>
+  <div id="edit-link">
+  <a href="http://prose.io/#kalkin7/kalkin7.github.io/edit/master/{{ page.path }}" target="_blank">Edit</a>
+  </div>
   <ul class="tags post-tags cf">
     {% for tag in page.tags %}
     <li><a href="/search/?tags={{ tag }}">{{ tag | downcase }}</a></li>
