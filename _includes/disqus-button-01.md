@@ -2,7 +2,7 @@
 
 <div class=disqusbox>
 <div>
-<p><strong>댓글을 보거나 작성하시려면 아래 버튼을 눌러주세요.</strong> (<small><a href="#disqus_thread"></a></small>)</p>
+<p><strong>댓글을 보거나 작성하시려면 아래 버튼을 눌러주세요.</strong></p>
 </div>
 <div id="disqus_thread"></div>
 <div id="disqus_loader">
