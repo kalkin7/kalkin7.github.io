@@ -2,7 +2,7 @@
 
 <div class=disqusbox>
 <div>
-<p><strong>댓글을 보거나 작성하시려면 아래 버튼을 눌러주세요.</strong> (<small><a href="{{post.url}}#disqus_thread" data-disqus-identifier="{{post.url}}"></a></small>)</p>
+<p><strong>댓글을 보거나 작성하시려면 아래 버튼을 눌러주세요.</strong> (<small><a href="{{ site.url }}{{ page.url }}#disqus_thread" data-disqus-identifier="{{ site.url }}{{ page.url }}"></a></small>)</p>
 </div>
 <div id="disqus_thread"></div>
 <div id="disqus_loader">
