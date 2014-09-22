@@ -4,7 +4,7 @@ title: Kalkin's Blog
 safe: true
 lsi: false
 
-permalink: pretty
+permalink: /:title/
 
 url: http://www.kalkinblog.tk
 
