@@ -375,7 +375,7 @@ blockquote {
 .tags {
   padding: 0;
   list-style-type: none;
-  font-size: 0.8em;
+  font-size: 0.95em;
 }
 
 .tags li {
@@ -568,7 +568,7 @@ img.aligncenter{
 }
 
 .tag_title{border-bottom:medium solid #d7d7d7;padding-bottom:5px}
-
+.tag_year{border-bottom:medium solid #d7d7d7;padding-bottom:5px}
 
 /*****************************************************************************/
 /*
@@ -745,6 +745,11 @@ ul#markdown-toc li ul li ul{margin-bottom:0.25em}
 .archive_year{border-bottom:medium solid #d7d7d7;padding-bottom:5px}
 li.archive_post_list{margin-left:2em}
 #archive ul{padding-left:0}
+
+/* Tag Search Page */
+.archive_year{border-bottom:medium solid #d7d7d7;padding-bottom:5px}
+li.tag_search_list{margin-left:2em}
+#by_tag ul{padding-left:0}
 
 /* Link Page */
 #link-title{margin-bottom:2em;line-height:120%;text-align:center}

@@ -13,11 +13,24 @@ layout: default
   <div class="post" id="post">
   {{ content }}
   </div>
-  <ul class="tags post-tags cf">
-    {% for tag in page.tags %}
-    <li><a href="/search?tags={{ tag }}">{{ tag | downcase }}</a></li>
-    {% endfor %}
-  </ul>
+    {% if page.tags.size > 0 %}
+        {% capture tags_content %} <ul class="tags post-tags cf"> {% if page.tags.size == 1 %} {% else %} {% endif %} {% endcapture %}
+        {% for page_tag in page.tags %}
+            {% for data_tag in site.data.tags %}
+                {% if data_tag.slug == page_tag %}
+                    {% assign tag = data_tag %}
+                {% endif %}
+            {% endfor %}
+            {% if tag %}
+                {% capture tags_content_temp %}{{ tags_content }}<li><a href="/tag/{{ tag.slug }}/">{{ tag.name }}</a></li>{% if forloop.last == false %} {% endif %}{% endcapture %}
+                {% assign tags_content = tags_content_temp %}
+            {% endif %}
+        {% endfor %}
+    {% else %}
+        {% assign tags_content = '' %}
+    {% endif %}
+
+  <p id="post-meta">{{ tags_content }}</ul></p>
 </article>
 
 <section class="post-footer">

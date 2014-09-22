@@ -1,0 +1,45 @@
+---
+layout: default
+---
+
+<article id="by_tag">
+<header id="post-header">
+{% for data_tag in site.data.tags %}
+    {% if data_tag.slug == page.tag %}
+        {% assign tag = data_tag %}
+    {% endif %}
+{% endfor %}
+    <h1>{{ tag.name }}</h1>
+</header>
+<br>
+<p> </p>
+<p> </p>
+
+<div id="post-content">
+    {% if site.tags[page.tag] %}
+        {% for page in site.tags[page.tag] %}
+            {% capture post_year %}{{ page.date | date: '%Y' }}{% endcapture %}
+            {% if forloop.first %}
+                <h2 class="tag_year">{{ post_year }}년</h2><div class="list-group"><ul>
+            {% endif %}
+			
+            {% if forloop.first == false %}
+                {% assign previous_index = forloop.index0 | minus: 1 %}
+                {% capture previous_post_year %}{{ site.tags[page.tag][previous_index].date | date: '%Y' }}{% endcapture %}
+                {% if post_year != previous_post_year %}
+                    </div><h2 class="tag_year">{{ post_year }}년</h2><div class="list-group"><ul>
+                {% endif %}
+            {% endif %}
+			
+			
+			{% capture post_date %}{{ page.date | date: "%m월 %d일" }}{% endcapture %}
+            <li class="tag_search_list"><small><time>{{ post_date | date:"%m월 %d일" }}</time></small>&nbsp;&nbsp;&nbsp;<a href="{{ site.url }}{{ page.url }}/" class="list-group-item">{{ page.title }}</a></li>
+            {% if forloop.last %}
+                </ul></div>
+            {% endif %}
+        {% endfor %}
+    {% else %}
+        <p>There are no posts for this tag.</p>
+    {% endif %}
+</div>
+</article>

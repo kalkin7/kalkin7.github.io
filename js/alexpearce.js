@@ -1,3 +1,4 @@
+/* alexpearce.js */
 // from https://github.com/alexpearce/alexpearce.github.com/blob/master/assets/js/alexpearce.js
 
 // Capitalises a string
@@ -90,7 +91,7 @@ var layoutResultsPage = function(property, value, posts) {
         tags     = post.tags;
         
     for (var j in tags) {
-      tagsList += '<li><a href="/search/?tags=' + tags[j] + '">' + tags[j].toLowerCase() + '</a></li>';
+      tagsList += '<li><a href="/search?tags=' + tags[j] + '">' + tags[j].toLowerCase() + '</a></li>';
     }
     tagsList += '</ul>';
     
@@ -102,7 +103,7 @@ var layoutResultsPage = function(property, value, posts) {
         + '</a>'
         // Post date
         + ' <span class="date">- '
-         + posts[i].date.day + ' ' + posts[i].date.month + ' ' + posts[i].date.year
+         + posts[i].date.year + '년 ' + posts[i].date.month + '월 ' + posts[i].date.day + '일 '
         + '</span>'
         // Tags
         + tagsList
@@ -172,3 +173,4 @@ $(function() {
   // ... and in inline code
   replaceERBTags($('p code'));
 });
+
