@@ -14,6 +14,7 @@ markdown_ext:  markdown,mkd,mkdn,md
 
 kramdown:
   auto_ids: true
+  transliterated_header_ids: ture
   footnote_nr: 1
   entity_output: as_char
   toc_levels: 2..6
