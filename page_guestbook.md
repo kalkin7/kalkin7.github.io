@@ -7,6 +7,6 @@ permalink: /guestbook/
 
 <article>
 <p><h1>방명록</h1>
-<br /></p>
+<br /><br /></p>
 {% include disqus.md %}
 </article>
