@@ -1,6 +1,6 @@
 ---
 layout: blog_by_tag
-title: 'Articles by tag: Jekyll'
+title: '태그 글목록: Jekyll'
 tag: jekyll
 permalink: /tag/jekyll/
 ---
