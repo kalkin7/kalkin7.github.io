@@ -1,6 +1,6 @@
 ---
 layout: blog_by_tag
-title: 'Articles by tag: github'
+title: '태그 글목록: x'
 tag: blog
-permalink: /tag/blog/
+permalink: /tag/x/
 ---
