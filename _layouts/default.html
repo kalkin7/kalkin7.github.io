@@ -13,7 +13,7 @@
     {% endif %}
   </title>
 <!--   <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:700,400|Titillium+Web:700,400"> -->
-  <link rel="stylesheet" href="/css/site.css">
+  {% include css.html %}
   <link href="/favicon/favicon.ico" rel="shortcut icon" type="image/x-icon" />
   {% if page.description %}<meta name="description" content="{{page.description}}" />{% endif %}
   <link rel="alternate" type="application/atom+xml" title="RSS Feed for Kalkin's blog" href="/feed.xml" />
@@ -63,11 +63,7 @@
     {% include footer.md %}
   </footer>
 
-  <!-- <script defer src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script> -->
-  <!-- tag, category search -->
-  <!--<script defer src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js" type='text/javascript'></script>-->
-  <script defer src="/js/kalkinblog-footer.js"></script>
-  <!-- <script defer src="/js/alexpearce.js"></script> -->
+  {% include js-footer.html %}
   <!-- Google Analytics -->
 <!--  <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
