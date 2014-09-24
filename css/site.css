@@ -711,7 +711,7 @@ img.aligncenter{
 /*****************************************************************************/
 
 /* footnotes */
-div.footnotes{margin:50px 0 30px;border-top:1px solid rgba(0, 0, 0, 0.1);padding:10px}
+div.footnotes{margin:50px 0 30px;border-top:1px solid rgba(0, 0, 0, 0.1);padding:10px;font-size:0.9em}
 
 /* Header RSS */
 div.site header span.icon-feed{color:#3073b3 !important}
