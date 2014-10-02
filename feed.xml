@@ -20,7 +20,7 @@ layout: null
     <language>en-US</language>
     <generator uri="http://octopress.org/">Octopress</generator>
 
-    {% for post in site.posts limit: 15 %}
+    {% for post in site.posts limit: 20 %}
         <item>
             <title><![CDATA[{{ post.title | cdata_escape }}]]></title>
             <link>{{ site.url }}{{ post.url }}</link>
