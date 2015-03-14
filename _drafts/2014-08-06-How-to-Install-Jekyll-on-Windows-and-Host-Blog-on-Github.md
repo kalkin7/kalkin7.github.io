@@ -92,7 +92,7 @@ tags: [ blog, jekyll, git ]
 ### Github 블로그 생성
 
 **1) 원하는 테마 찾기**
-[Jekyll Themes](http://jekyllthemes.org/)에 jekyll에서 쓸 수 있는 테마들이 많이 모아져 있다. 여기서 마음에 드는 테마를 골라서 다운받아 놓는다. 다운로드는 테마 설명 부분에 있는 **'Download'** 버튼을 눌러서 쉽게 받을 수 있다. 또한 대부분의 테마들이 github에 호스팅되어 있기 때문에 `git clone` 명령어를 통해서 다운받아도 된다.
+[Jekyll Themes](http://jekyllthemes.org/)에 상당수의 jekyll 테마들이 모여 있다. 여기서 마음에 드는 테마를 골라서 다운받아 놓는다. 다운로드는 테마 설명 부분에 있는 **'Download'** 버튼을 눌러서 쉽게 받을 수 있다. 또한 대부분의 테마들이 github에 호스팅되어 있기 때문에 `git clone` 명령어를 통해서 다운받아도 된다.
 
 
 
