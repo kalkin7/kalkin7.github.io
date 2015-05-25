@@ -7,8 +7,8 @@
 <div id="disqus_thread"><button class="show-comments" onclick="my.loadDisqus();return false;"><span class="icon-comments"></span>&nbsp;&nbsp;댓글 보기</button></div>
 <script>
 var disqus_shortname = "kalkingithub";
-// provide the following in the template, if necessary
-// var disqus_url = "http://yourghostblogdomainname/";
+/* provide the following in the template, if necessary */
+/* var disqus_url = "http://yourghostblogdomainname/"; */
 var disqus_identifier = '{{id}}';
 var my = my || {};
 my.loadDisqus = function() {

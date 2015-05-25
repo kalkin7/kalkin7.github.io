@@ -39,3 +39,10 @@ author:name:
     name: kalkin7
     twitter: https://twitter.com/kalkin_7
     email: kalkin7@gmail.com
+
+compress_html:
+  clippings: all
+  comments: ["<!-- ", " -->"]
+  endings: all
+  ignore:
+    envs: [local]
