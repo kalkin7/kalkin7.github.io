@@ -6,11 +6,12 @@
 this.blankwin=function(){var c=window.location.hostname;c=c.replace("www.","").toLowerCase();var d=document.getElementsByTagName("a");this.check=function(a){var e=a.href.toLowerCase();return(e.indexOf("http://")!=-1&&e.indexOf(c)==-1&&e.indexOf("prose.io")==-1)?true:false};this.set=function(a){a.target="_0";LinkClass1=a.className;a.className=LinkClass1+" externalLink"};for(var b=0;b<d.length;b++){if(check(d[b]))set(d[b])}};
 this.addEvent=function(c,b,a){if(c.attachEvent){c["e"+b+a]=a;c[b+a]=function(){c["e"+b+a](window.event)};c.attachEvent("on"+b,c[b+a])}else{c.addEventListener(b,a,false)}};addEvent(window,"load",blankwin);
 
+<script type="text/javascript">
 function addLink() {
 	var body_element = document.getElementsByTagName('body')[0];
 	var selection;
 	selection = window.getSelection();
-	var pagelink = "<br /><br />귀하는 복제를 금지하는 사이트에서 콘텐츠를 복사해 사용하려고 하고 있습니다. 이 콘텐츠를 블로그나 웹사이트 또는 인쇄물의 콘텐츠로 사용하면 저작권 문제로 처벌 받을 수 있습니다. 원본: "+document.location.href+"
+	var pagelink = "<br /><br />이 콘텐츠를 블로그나 웹사이트 또는 인쇄물의 콘텐츠로 사용하면 저작권 문제로 처벌 받을 수 있습니다. 원본: "+document.location.href+"
 Copyright © 칼킨";
 	var copytext = selection + pagelink;
 	var newdiv = document.createElement('div');
