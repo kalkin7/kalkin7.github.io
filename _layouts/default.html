@@ -17,7 +17,7 @@ layout: compress
     {% endif %}
   </title>
 <!--   <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:700,400|Titillium+Web:700,400"> -->
-  {% include css.html %}
+  {% include css-inline.html %}
   {% include favicon.html %}
   {% if page.description %}<meta name="description" content="{{page.description}}" />{% endif %}
   <link rel="alternate" type="application/atom+xml" title="RSS Feed for Kalkin's blog" href="/feed.xml" />
@@ -84,4 +84,5 @@ layout: compress
   {% include toc.html %}
   
 </body>
+{% include css-inline.html %}
 </html>
