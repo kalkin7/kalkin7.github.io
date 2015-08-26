@@ -111,11 +111,6 @@ img.aligncenter{display:block;margin:0 auto;}
 .tag-box a span{vertical-align:super;font-size:10px;font-size:0.625rem;}
 .tag_title{border-bottom:medium solid #d7d7d7;padding-bottom:5px}
 .tag_year{border-bottom:medium solid #d7d7d7;padding-bottom:5px}
-@font-face{font-family:'kalkin7-github';src:url('http://ssproxy.ucloudbiz.olleh.com/v1/AUTH_a57f6890-5b20-44ab-9ded-b1760618913a/CDN01/font/kalkin7-github/kalkin7-github.eot?cozqbv');src:url('http://ssproxy.ucloudbiz.olleh.com/v1/AUTH_a57f6890-5b20-44ab-9ded-b1760618913a/CDN01/font/kalkin7-github/kalkin7-github.eot?#iefixcozqbv') format('embedded-opentype'),
-url('http://ssproxy.ucloudbiz.olleh.com/v1/AUTH_a57f6890-5b20-44ab-9ded-b1760618913a/CDN01/font/kalkin7-github/kalkin7-github.woff?cozqbv') format('woff'),
-url('http://ssproxy.ucloudbiz.olleh.com/v1/AUTH_a57f6890-5b20-44ab-9ded-b1760618913a/CDN01/font/kalkin7-github/kalkin7-github.ttf?cozqbv') format('truetype'),
-url('http://ssproxy.ucloudbiz.olleh.com/v1/AUTH_a57f6890-5b20-44ab-9ded-b1760618913a/CDN01/font/kalkin7-github/kalkin7-github.svg?cozqbv#kalkin7-github') format('svg');font-weight:normal;font-style:normal;}
-[class^="icon-"], [class*=" icon-"]{font-family:'kalkin7-github';speak:none;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;}
 .icon-film:before{content:"\f008";}
 .icon-home:before{content:"\f015";}
 .icon-tags:before{content:"\f02c";}
