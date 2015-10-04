@@ -7,7 +7,8 @@ this.blankwin=function(){var c=window.location.hostname;c=c.replace("www.","").t
 this.addEvent=function(c,b,a){if(c.attachEvent){c["e"+b+a]=a;c[b+a]=function(){c["e"+b+a](window.event)};c.attachEvent("on"+b,c[b+a])}else{c.addEventListener(b,a,false)}};addEvent(window,"load",blankwin);
 </script>
 
-<script src="/js/kalkinblog-footer.min.js" async></script>
+<!-- <script src="/js/kalkinblog-footer.min.js" async></script> -->
+<script src="http://ts.daumcdn.net/custom/blog/94/948102/skin/images/kalkinblog-footer.min.js" async></script>
 
 <script>
 function addLink() {
