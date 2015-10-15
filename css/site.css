@@ -577,11 +577,11 @@ img.aligncenter{
 /*****************************************************************************/
 @font-face {
 	font-family: 'kalkin7-github';
-	src:url('fonts/kalkin7-github.eot?cozqbv');
-	src:url('fonts/kalkin7-github.eot?#iefixcozqbv') format('embedded-opentype'),
-		url('fonts/kalkin7-github.woff?cozqbv') format('woff'),
-		url('fonts/kalkin7-github.ttf?cozqbv') format('truetype'),
-		url('fonts/kalkin7-github.svg?cozqbv#kalkin7-github') format('svg');
+	src:url('http://ts.daumcdn.net/custom/blog/94/948102/skin/images/kalkin7-github.eot?cozqbv');
+	src:url('http://ts.daumcdn.net/custom/blog/94/948102/skin/images/kalkin7-github.eot?#iefixcozqbv') format('embedded-opentype'),
+		url('http://ts.daumcdn.net/custom/blog/94/948102/skin/images/kalkin7-github.woff?cozqbv') format('woff'),
+		url('http://ts.daumcdn.net/custom/blog/94/948102/skin/images/kalkin7-github.ttf?cozqbv') format('truetype'),
+		url('http://ts.daumcdn.net/custom/blog/94/948102/skin/images/kalkin7-github.svg?cozqbv#kalkin7-github') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
