@@ -1,3 +1,11 @@
+<script>
+    function loadCSS( href, before, media, callback ){ ... }
+    var stylesheet = loadCSS( 'http://ts.daumcdn.net/custom/blog/94/948102/skin/images/site-ti.min.css' );
+    onloadCSS( stylesheet, function() {
+        var expires = new Date(+new Date + (7 * 24 * 60 * 60 * 1000)).toUTCString();
+        document.cookie = 'fullCSS=true; expires=' + expires;
+    });
+</script>
 <style type="text/css">
 <!--
 *{margin:0;padding:0;}
