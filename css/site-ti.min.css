@@ -1,3 +1,17 @@
+h1, h2{font-family:'Open Sans',Arial,나눔바른고딕,NanumBarunGothic,나눔고딕,NanumGothic,'맑은 고딕','Malgun Gothic',sans-serif;font-weight:500;color:#1C1C1C;margin-top:1.6em;margin-bottom:0.6em;line-height:1.2em;}
+h1{font-size:1.8em;line-height:1.8em;font-weight:700;}
+a{text-decoration:none;color:#3073b3;}
+@font-face{font-family:'kalkin7-github';src:url('http://ts.daumcdn.net/custom/blog/94/948102/skin/images/kalkin7-github.eot?cozqbv');src:url('http://ts.daumcdn.net/custom/blog/94/948102/skin/images/kalkin7-github.eot?#iefixcozqbv') format('embedded-opentype'),
+url('http://ts.daumcdn.net/custom/blog/94/948102/skin/images/kalkin7-github.woff?cozqbv') format('woff'),
+url('http://ts.daumcdn.net/custom/blog/94/948102/skin/images/kalkin7-github.ttf?cozqbv') format('truetype'),
+url('http://ts.daumcdn.net/custom/blog/94/948102/skin/images/kalkin7-github.svg?cozqbv#kalkin7-github') format('svg');font-weight:normal;font-style:normal;}
+[class^="icon-"]{font-family:'kalkin7-github';speak:none;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;}
+.icon-feed:before{content:"\e602";}
+div.site header span.icon-feed{color:#3073b3 !important}
+ul#markdown-toc:before{content:"목차";font-weight:400;font-size:1.5rem;color:#1C1C1C}
+ul#markdown-toc{background:none repeat scroll 0 0 #f9f9f9;border:1px solid #aaa;display:table;margin-top:2em;margin-bottom:1em;padding:16px 20px 10px;width:auto;list-style:none;margin-left:0;font-size:90%;line-height:1.5}
+ul#markdown-toc li:first-child{margin-top:0.6em}
+ul#markdown-toc li{padding-left:0.8em}
 .highlight{background-color:#EAEAEA;border:1px solid #ddd;-moz-box-shadow:1px 1px rgba(0,0,0,0.1);-webkit-box-shadow:1px 1px rgba(0,0,0,0.1);box-shadow:1px 1px rgba(0,0,0,0.1);overflow-x:auto;line-height:140%;font-size:80%;margin:20px 0;padding:1px 1px 1px 2px;}code{font-family:나눔고딕코딩,NanumGothicCoding'Bitstream Vera Sans Mono',Courier, monospace;}.highlight .ge{color:#93A1A1;font-style:italic;}.highlight .gs{color:#93A1A1;font-weight:700;}.highlight .nb{color:#B58900;}.highlight .nx{color:#555;}.highlight .c,.highlight .cm,.highlight .c1,.highlight .sb{color:#586E75;}.highlight .err,.highlight .g,.highlight .l,.highlight .n,.highlight .p,.highlight .go,.highlight .gp,.highlight .gt,.highlight .ld,.highlight .na,.highlight .nl,.highlight .nn,.highlight .py,.highlight .w,.highlight .sd,.highlight .sh{color:#93A1A1;}.highlight .k,.highlight .o,.highlight .cp,.highlight .cs,.highlight .gi,.highlight .kn,.highlight .kp,.highlight .ow{color:#859900;}.highlight .x,.highlight .gh,.highlight .gu,.highlight .kc,.highlight .no,.highlight .ni,.highlight .ne,.highlight .se{color:#CB4B16;}.highlight .gd,.highlight .m,.highlight .s,.highlight .mf,.highlight .mh,.highlight .mi,.highlight .mo,.highlight .sc,.highlight .s2,.highlight .si,.highlight .sx,.highlight .s1,.highlight .ss,.highlight .il{color:#2AA198;}.highlight .gr,.highlight .kt,.highlight .sr{color:#DC322F;}.highlight .kd,.highlight .kr,.highlight .nc,.highlight .nd,.highlight .nf,.highlight .nt,.highlight .nv,.highlight .bp,.highlight .vc,.highlight .vg,.highlight .vi{color:#268BD2;}
 *{margin:0;padding:0;}
 ul{padding-left:1.5em;}
