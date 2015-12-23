@@ -33,7 +33,7 @@ a.discreet{color:#545454;}
 .container{padding:0 2em;}
 @media (max-width:360px){.container{padding:0 1em;}
 }
-.fancy, section, article{font-family:"Open Sans",Arial,나눔바른고딕,NanumBarunGothic,나눔고딕,NanumGothic,'맑은 고딕','Malgun Gothic',Helvetica, Arial, sans-serif;line-height:170%;}
+.fancy, section, article{font-family:"Open Sans",Arial,나눔바른고딕,NanumBarunGothic,나눔고딕,NanumGothic,'맑은 고딕','Malgun Gothic',Helvetica, Arial, sans-serif;line-height:160%;}
 .pull-right{float:right;}
 .pull-left{float:left;}
 .clear{clear:both;}
@@ -53,6 +53,8 @@ header .logo a, header .logo a:hover{color:black;text-decoration:none;font-size:
 header .avatar{margin-top:1em;max-width:80px;vertical-align:-3px;}
 header nav{float:none;text-align:center;}
 .site{text-align:left !important;}
+#post{font-size:90%}
+#post p{line-height:150%}
 }
 nav a{display:inline-block;margin-right:1.2em;padding-bottom:0.2em;font-weight:normal;border-bottom:3px solid transparent;}
 nav a:last-child{margin-right:0;}
