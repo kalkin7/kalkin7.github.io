@@ -43,7 +43,7 @@ layout: compress
           <!-- <a class="{% if page.category == '/' %} selected {% endif %}" href="/">홈</a> -->
           <a class="{% if page.category == 'archive' %} selected {% endif %}" href="/archive/">전체글</a>
           <a class="{% if page.category == 'tag' %} selected {% endif %}" href="/tag/">태그</a>
-          <a class="{% if page.category == 'tag' %} selected {% endif %}" href="/link/">링크</a>
+          <a class="{% if page.category == 'link' %} selected {% endif %}" href="/link/">링크</a>
           <a class="{% if page.category == 'guestbook' %} selected {% endif %}" href="/guestbook/">방명록</a>
         </nav>
         <div class="pull-left left logo">
@@ -68,20 +68,21 @@ layout: compress
   </footer>
 
   {% include js-footer.html %}
-  <script type="text/javascript">
-   var disqus_shortname = 'kalkingithub';
-   /* * * DON'T EDIT BELOW THIS LINE * * */
-      (function () {
-          var s = document.createElement('script'); s.async = true;
-          s.type = 'text/javascript';
-          s.src = '//' + disqus_shortname + '.disqus.com/count.js';
-          (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
-      }());
-  </script>
-  <!-- <script defer src="/js/alexpearce.js"></script> -->
+  <!-- Google Analytics -->
+<!--	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-31629681-8', 'auto');
+	  ga('send', 'pageview');
+
+	</script> -->
   
   <!-- TOC Generator -->
-  {% include toc-archive.html %}
-
+  {% include toc.html %}
+  
   {% include css-loadcss.html %}
+</body>
 </html>
