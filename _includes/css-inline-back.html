@@ -1,0 +1,55 @@
+<script>
+    !function(e){"use strict";e.loadCSS=function(t,n,r){var i,l=e.document,o=l.createElement("link");if(n)i=n;else{var a=(l.body||l.getElementsByTagName("head")[0]).childNodes;i=a[a.length-1]}var s=l.styleSheets;o.rel="stylesheet",o.href=t,o.media="only x",i.parentNode.insertBefore(o,n?i:i.nextSibling);var f=function(e){for(var t=o.href,n=s.length;n--;)if(s[n].href===t)return e();setTimeout(function(){f(e)})};return o.onloadcssdefined=f,f(function(){o.media=r||"all"}),o}}(this);
+    var stylesheet = loadCSS( 'http://ts.daumcdn.net/custom/blog/94/948102/skin/images/site-ti.min.css' );
+	function onloadCSS(n,o){n.onload=function(){n.onload=null,o&&o.call(n)},"isApplicationInstalled"in navigator&&"onloadcssdefined"in n&&n.onloadcssdefined(o)};
+    onloadCSS( stylesheet, function() {
+        var expires = new Date(+new Date + (7 * 24 * 60 * 60 * 1000)).toUTCString();
+        document.cookie = 'fullCSS=true; expires=' + expires;
+    });
+</script>
+<style type="text/css">
+<!--
+*{margin:0;padding:0;}
+ul{padding-left:1.5em;}
+body{color:#545454;text-align:center;font-family:'Open Sans',Arial,나눔바른고딕,NanumBarunGothic,나눔고딕,NanumGothic,'맑은 고딕','Malgun Gothic',Helvetica,Arial, sans-serif;text-rendering:optimizeLegibility;font-size:120%;}
+.top-bar{height:4px;background-color:#255b96;}
+h1, h2{font-family:'Open Sans',Arial,나눔바른고딕,NanumBarunGothic,나눔고딕,NanumGothic,'맑은 고딕','Malgun Gothic',sans-serif;font-weight:500;color:#1C1C1C;margin-top:1.6em;margin-bottom:0.6em;line-height:1.2em;}
+h1{font-size:1.8em;line-height:1.8em;font-weight:700;}
+p{margin:1em 0;}
+a{text-decoration:none;color:#3073b3;}
+.container{padding:0 2em;}
+@media (max-width:360px){.container{padding:0 1em;}
+} article{font-family:"Open Sans",Arial,나눔바른고딕,NanumBarunGothic,나눔고딕,NanumGothic,'맑은 고딕','Malgun Gothic',Helvetica, Arial, sans-serif;line-height:160%;}
+.pull-left{float:left;}
+.clear{clear:both;}
+.center{text-align:center;}
+@media (max-width:480px){ article{text-align:left;}
+}
+header{margin:auto;max-width:800px;width:100%;font-family:'Open Sans',Arial,나눔바른고딕,NanumBarunGothic,나눔고딕,NanumGothic,'맑은 고딕','Malgun Gothic',sans-serif;font-weight:bold;}
+header nav{float:right;padding-top:0;}
+.separator{border-bottom:1px solid #E6E6E6;padding-bottom:1em;margin-bottom:1.5em;}
+header .logo a{color:black;text-decoration:none;font-size:140%}
+.logo .name{display:inline-block;}
+@media (max-width:640px){header .logo{clear:left;text-align:center;padding-top:0;float:none;margin-top:15px;}
+header nav{float:none;text-align:center;}
+.site{text-align:left !important;}
+}
+nav a{display:inline-block;margin-right:1.2em;padding-bottom:0.2em;font-weight:normal;border-bottom:3px solid transparent;}
+nav a:last-child{margin-right:0;}
+.site{text-align:justify;max-width:700px;margin:1em auto 1em;line-height:1.5em;}
+article h1{margin-bottom:0;line-height:120%;text-align:center;}
+.site .meta{display:inline-block;color:#666;border-top:1px solid #ccc;*/margin-top:4px;padding:4px 8px;margin-bottom:2em;}
+.post ul{margin-left:1.35em;}
+@font-face{font-family:'kalkin7-github';src:url('http://ts.daumcdn.net/custom/blog/94/948102/skin/images/kalkin7-github.eot?cozqbv');src:url('http://ts.daumcdn.net/custom/blog/94/948102/skin/images/kalkin7-github.eot?#iefixcozqbv') format('embedded-opentype'),
+url('http://ts.daumcdn.net/custom/blog/94/948102/skin/images/kalkin7-github.woff?cozqbv') format('woff'),
+url('http://ts.daumcdn.net/custom/blog/94/948102/skin/images/kalkin7-github.ttf?cozqbv') format('truetype'),
+url('http://ts.daumcdn.net/custom/blog/94/948102/skin/images/kalkin7-github.svg?cozqbv#kalkin7-github') format('svg');font-weight:normal;font-style:normal;}
+[class^="icon-"]{font-family:'kalkin7-github';speak:none;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;}
+.icon-feed:before{content:"\e602";}
+div.site header span.icon-feed{color:#3073b3 !important}
+ul#markdown-toc:before{content:"목차";font-weight:400;font-size:1.5rem;color:#1C1C1C}
+ul#markdown-toc{background:none repeat scroll 0 0 #f9f9f9;border:1px solid #aaa;display:table;margin-top:2em;margin-bottom:1em;padding:16px 20px 10px;width:auto;list-style:none;margin-left:0;font-size:90%;line-height:1.5}
+ul#markdown-toc li:first-child{margin-top:0.6em}
+ul#markdown-toc li{padding-left:0.8em}
+//-->
+</style>

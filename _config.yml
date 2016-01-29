@@ -18,17 +18,12 @@ kramdown:
   entity_output: as_char
   toc_levels: 2..6
   smart_quotes: lsquo,rsquo,ldquo,rdquo
-  use_coderay: true
 
-  coderay:
-    coderay_wrap:              div
-    coderay_line_numbers:      inline
-    coderay_line_number_start: 1
-    coderay_tab_width:         4
-    coderay_bold_every:        10
-    coderay_css:               style
+redcarpet:
+  extensions: ['smart', 'tables', 'with_toc_data']
 
 gems:
+  - jekyll-paginate
   - jekyll-sitemap
 
 timezone: Asia/Seoul
@@ -46,3 +41,5 @@ compress_html:
   endings: all
   ignore:
     envs: [local]
+
+exclude: ['Gemfile', 'Gemfile.lock', 'LICENSE', 'README.md', 'CNAME', 'node_modules' ]
