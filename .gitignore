@@ -1,3 +1,12 @@
 _site/
+_drafts
 .backup
 node_modules
+gulpfile.js
+package.json
+new_tag.bat
+git_push.bat
+git_link_update.bat
+git_blog_update.bat
+git_pull.bat
+jekyll watch.bat
