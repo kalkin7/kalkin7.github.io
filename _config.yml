@@ -42,4 +42,4 @@ compress_html:
   ignore:
     envs: [local]
 
-exclude: ['Gemfile', 'Gemfile.lock', 'LICENSE', 'README.md', 'CNAME', 'node_modules' ]
+exclude: ['Gemfile', 'Gemfile.lock', 'LICENSE', 'README.md', 'CNAME', 'node_modules', 'gulpfile.js', 'package.json', 'new_tag.bat', 'git_push.bat', 'git_link_update.bat', 'git_blog_update.bat', 'git_pull.bat', 'jekyll watch.bat' ]
