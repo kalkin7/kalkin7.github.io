@@ -1,9 +1,5 @@
 title: Kalkin's Blog
 
-# Oveerriden by GitHub Pages: https://help.github.com/articles/using-jekyll-with-pages#configuring-jekyll
-safe: true
-lsi: false
-
 permalink: /:year/:month/:day/:title/
 
 url: http://www.kalkinblog.tk
@@ -13,24 +9,21 @@ markdown:      kramdown
 markdown_ext:  markdown,mkd,mkdn,md
 
 kramdown:
+  input: GFM
   auto_ids: true
+  auto_id_prefix: 'id-'
   footnote_nr: 1
   entity_output: as_char
   toc_levels: 2..6
   smart_quotes: lsquo,rsquo,ldquo,rdquo
 
-redcarpet:
-  extensions: ['smart', 'tables', 'with_toc_data']
-
 gems:
   - jekyll-paginate
   - jekyll-sitemap
 
-timezone: Asia/Seoul
+paginate: 7
 
-paginate: 10
-
-author:name:
+author:
     name: kalkin7
     twitter: https://twitter.com/kalkin_7
     email: kalkin7@gmail.com
